@@ -4,7 +4,7 @@ const stats = [
     {
         stat: '$400B+',
         label: 'SME Credit Gap in LATAM',
-        context: 'Millions of SMEs have cash flow but no credit file. The demand is real; the signal is missing.',
+        context: 'Millions of SMEs have cash flow but no credit file. The demand exists; it\'s the signal that\'s missing.',
         icon: (
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
                 <path d="M14 2L2 9v10l12 7 12-7V9L14 2z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -28,7 +28,7 @@ const stats = [
     {
         stat: '60%',
         label: 'Legacy IT Spend',
-        context: 'Of bank IT budgets go to maintaining legacy cores. NaLi integrates without requiring a core system replacement.',
+        context: '60% of bank IT budgets go to maintaining legacy cores. NaLi integrates without requiring a core system replacement.',
         icon: (
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
                 <rect x="3" y="4" width="22" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" />

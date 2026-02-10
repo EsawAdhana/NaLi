@@ -4,7 +4,7 @@ const features = [
     {
         badge: '01',
         title: 'Explainable AI (No Black Boxes)',
-        copy: "Regulators (SBS) require explainability. Unlike neural networks that obscure logic, NaLi uses rigorous Linear Regression. Every score is fully traceable to specific behavioral factors like 'Bill Payment Consistency' or 'Wallet Inflow Frequency'.",
+        copy: "Regulators (SBS) require explainability. Unlike neural networks that obscure reasoning, NaLi uses a linear regression model, where every score is fully traceable to specific behavioral factors like 'Bill Payment Consistency' or 'Wallet Inflow Frequency'.",
         visual: (
             <div className="tdd__visual tdd__visual--explain">
                 <div className="tdd__factor">
@@ -80,7 +80,7 @@ const features = [
     {
         badge: '03',
         title: "The 'Smoking Gun' Validation",
-        copy: "We don't just model theory; we prove it. In our initial pilot cohorts funded by impact investors, NaLi-scored loans achieved a",
+        copy: "We don't just model theory — we prove it. In pilot cohorts funded by impact investors, NaLi-scored loans achieved a ",
         highlight: '100% Repayment Rate',
         copyEnd: '.',
         visual: (

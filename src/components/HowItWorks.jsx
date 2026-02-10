@@ -57,7 +57,7 @@ export default function HowItWorks() {
                                 <span className="hiw__signal-sub">Identity</span>
                             </div>
                         </div>
-                        <p className="hiw__stage-desc">Ingesting real-time cash flow and payment history.</p>
+                        <p className="hiw__stage-desc">Real-time cash flow and payment history from across LATAM.</p>
                     </div>
 
                     {/* CONNECTOR */}
@@ -109,7 +109,7 @@ export default function HowItWorks() {
                     {/* OUTPUT */}
                     <div className="hiw__stage hiw__stage--output">
                         <div className="hiw__stage-label">Output</div>
-                        <div className="hiw__stage-title">The Decision</div>
+                        <div className="hiw__stage-title">Bureau-Grade Decision</div>
                         <div className="hiw__scorecard">
                             <div className="hiw__score-ring">
                                 <svg viewBox="0 0 120 120" className="hiw__score-svg">
@@ -128,7 +128,7 @@ export default function HowItWorks() {
                                 <span className="hiw__score-range">300 – 900 Scale</span>
                             </div>
                         </div>
-                        <p className="hiw__stage-desc">Bureau-aligned score + Regulatory Explainability.</p>
+                        <p className="hiw__stage-desc">Bureau-aligned score with full regulatory explainability.</p>
                     </div>
                 </div>
             </div>

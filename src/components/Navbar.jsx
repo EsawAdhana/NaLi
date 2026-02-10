@@ -26,8 +26,8 @@ export default function Navbar() {
                 </div>
 
                 <div className="navbar__actions">
-                    <a href="#login" className="navbar__login">Login</a>
-                    <a href="#api-keys" className="btn btn-primary navbar__cta">Get API Keys</a>
+                    <a href="#demo" className="navbar__login">Login</a>
+                    <a href="#demo" className="btn btn-primary navbar__cta">Get API Keys</a>
                 </div>
 
                 <button

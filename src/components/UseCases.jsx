@@ -9,7 +9,7 @@ const cases = [
                 <path d="M8 12v12M14 12v12M18 12v12M24 12v12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
         ),
-        copy: "Acquire customers from the 'invisible' 70% of the market without lowering credit standards.",
+        copy: "Reach the 70% of the market that traditional bureaus can't see — without lowering credit standards.",
     },
     {
         audience: 'For MFIs',
