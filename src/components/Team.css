@@ -1,0 +1,88 @@
+.team__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    max-width: 800px;
+    margin: 0 auto var(--space-2xl);
+}
+
+.team__card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-lg);
+}
+
+.team__avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-navy), var(--color-navy-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.team__avatar span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-teal);
+    letter-spacing: 0.02em;
+}
+
+.team__name {
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+}
+
+.team__role {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-teal-dark);
+    display: block;
+    margin-bottom: var(--space-sm);
+}
+
+.team__bio {
+    font-size: 0.9rem;
+}
+
+.team__advisory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    padding: var(--space-lg) var(--space-xl);
+    background: var(--color-teal-glow);
+    border: 1px solid rgba(45, 212, 191, 0.2);
+    border-radius: var(--radius-lg);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.team__advisory-icon {
+    color: var(--color-teal-dark);
+    flex-shrink: 0;
+}
+
+.team__advisory p {
+    font-size: 0.92rem;
+    color: var(--color-navy);
+}
+
+.team__advisory strong {
+    color: var(--color-navy);
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .team__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team__card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

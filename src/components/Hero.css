@@ -1,0 +1,220 @@
+.hero {
+    position: relative;
+    padding-top: calc(var(--nav-height) + var(--space-4xl));
+    padding-bottom: var(--space-4xl);
+    overflow: hidden;
+}
+
+.hero__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.hero__content {
+    animation: fadeInUp 0.8s var(--ease) both;
+}
+
+.hero__tag {
+    margin-bottom: var(--space-lg);
+}
+
+.hero__tag-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-teal);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.hero__title {
+    margin-bottom: var(--space-lg);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.hero__subtitle {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-2xl);
+    max-width: 540px;
+}
+
+.hero__actions {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+/* Code Window */
+.hero__visual {
+    position: relative;
+    animation: slideInRight 0.8s var(--ease) 0.2s both;
+}
+
+.hero__code-window {
+    background: #0D1117;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.06),
+        0 20px 50px rgba(0, 0, 0, 0.35),
+        0 0 80px rgba(45, 212, 191, 0.06);
+    position: relative;
+    z-index: 1;
+}
+
+.hero__code-header {
+    display: flex;
+    align-items: center;
+    padding: 0.85rem 1.25rem;
+    background: #161B22;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    gap: var(--space-md);
+}
+
+.hero__code-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.hero__code-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.hero__code-dots span:nth-child(1) {
+    background: #FF5F56;
+}
+
+.hero__code-dots span:nth-child(2) {
+    background: #FFBD2E;
+}
+
+.hero__code-dots span:nth-child(3) {
+    background: #27C93F;
+}
+
+.hero__code-filename {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: #8B949E;
+    flex: 1;
+}
+
+.hero__code-badge {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--color-teal);
+    background: rgba(45, 212, 191, 0.12);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+}
+
+.hero__code-body {
+    padding: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: #E6EDF3;
+    overflow-x: auto;
+}
+
+.hero__code-body code {
+    font-family: inherit;
+}
+
+.hero__code-cursor {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 8px;
+    height: 18px;
+    background: var(--color-teal);
+    border-radius: 1px;
+    animation: blink 1.2s step-end infinite;
+}
+
+/* Syntax colors */
+.code-comment {
+    color: #8B949E;
+    font-style: italic;
+}
+
+.code-key {
+    color: #79C0FF;
+}
+
+.code-string {
+    color: #A5D6FF;
+}
+
+.code-number {
+    color: #79C0FF;
+    font-weight: 600;
+}
+
+.code-teal {
+    color: var(--color-teal);
+    font-weight: 700;
+}
+
+/* Glows */
+.hero__glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero__glow--1 {
+    width: 300px;
+    height: 300px;
+    background: rgba(45, 212, 191, 0.08);
+    top: -50px;
+    right: -50px;
+}
+
+.hero__glow--2 {
+    width: 200px;
+    height: 200px;
+    background: rgba(10, 25, 47, 0.06);
+    bottom: -30px;
+    left: -30px;
+}
+
+/* Grid background */
+.hero__grid-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(rgba(10, 25, 47, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(10, 25, 47, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+}
+
+@media (max-width: 860px) {
+    .hero {
+        padding-top: calc(var(--nav-height) + var(--space-2xl));
+        padding-bottom: var(--space-2xl);
+    }
+
+    .hero__inner {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    .hero__code-body {
+        font-size: 0.72rem;
+    }
+}

@@ -1,0 +1,211 @@
+.tdd__features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4xl);
+}
+
+.tdd__feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.tdd__feature--reverse {
+    direction: rtl;
+}
+
+.tdd__feature--reverse>* {
+    direction: ltr;
+}
+
+.tdd__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+    background: var(--color-teal-glow);
+    color: var(--color-teal-dark);
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin-bottom: var(--space-md);
+}
+
+.tdd__feature-title {
+    margin-bottom: var(--space-md);
+}
+
+.tdd__feature-copy {
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.tdd__highlight {
+    color: var(--color-teal);
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+/* Explainability Visual */
+.tdd__visual {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+}
+
+.tdd__factor {
+    margin-bottom: var(--space-md);
+    position: relative;
+}
+
+.tdd__factor:last-child {
+    margin-bottom: 0;
+}
+
+.tdd__factor-bar {
+    height: 6px;
+    background: linear-gradient(90deg, var(--color-teal), rgba(45, 212, 191, 0.3));
+    border-radius: 3px;
+    margin-bottom: 6px;
+    transition: width 1s var(--ease);
+}
+
+.tdd__factor-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tdd__factor-name {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--color-slate-dark);
+}
+
+.tdd__factor-value {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--color-teal-dark);
+}
+
+/* Integration Architecture Visual */
+.tdd__arch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.tdd__arch-layer {
+    padding: 0.65rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-align: center;
+    min-width: 120px;
+}
+
+.tdd__arch-layer--top {
+    background: rgba(10, 25, 47, 0.06);
+    color: var(--color-navy);
+    border: 1px solid var(--color-border);
+}
+
+.tdd__arch-layer--nali {
+    background: var(--color-teal-glow);
+    color: var(--color-teal-dark);
+    border: 1.5px solid var(--color-teal);
+    font-weight: 700;
+}
+
+.tdd__arch-layer--legacy {
+    background: rgba(100, 116, 139, 0.08);
+    color: var(--color-slate);
+    border: 1px dashed var(--color-slate-light);
+    font-size: 0.75rem;
+}
+
+.tdd__arch-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.tdd__arch-row {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+/* Validation Visual */
+.tdd__repayment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.tdd__repayment-circle {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.tdd__repayment-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.tdd__repayment-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tdd__repayment-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-teal);
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+
+.tdd__repayment-label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--color-slate);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+}
+
+.tdd__repayment-meta {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.tdd__repayment-meta span {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--color-slate);
+    padding: 0.3rem 0.8rem;
+    background: rgba(10, 25, 47, 0.04);
+    border-radius: 50px;
+}
+
+@media (max-width: 860px) {
+
+    .tdd__feature,
+    .tdd__feature--reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+}
